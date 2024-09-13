@@ -1,0 +1,291 @@
+[0.120s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'dave_interfaces']
+[0.120s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['dave_interfaces'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73c8bf4fe0b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73c8bf656710>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73c8bf656710>>, mixin_verb=('build',))
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.312s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/gopi5go_desk/ros2ws'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'python_setup_py'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extension 'ros'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extensions ['cmake', 'python']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extension 'cmake'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extension 'python'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(obsolete) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'ros'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['cmake', 'python']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'ros'
+[0.329s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave_interfaces' with type 'ros.ament_cmake' and name 'dave_interfaces'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extension 'ros'
+[0.331s] DEBUG:colcon.colcon_core.package_identification:Package 'src/explorer_wanderer' with type 'ros.ament_python' and name 'explorer_wanderer'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/gopi5go_dave) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/gopi5go_dave) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/gopi5go_dave) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/gopi5go_dave) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/gopi5go_dave) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/gopi5go_dave) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/gopi5go_dave) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/gopi5go_dave) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/gopi5go_dave) by extension 'ros'
+[0.331s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gopi5go_dave' with type 'ros.ament_python' and name 'gopi5go_dave'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extension 'ignore_ament_install'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extensions ['colcon_pkg']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extension 'colcon_pkg'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extensions ['colcon_meta']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extension 'colcon_meta'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extensions ['ros']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extension 'ros'
+[0.333s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nav2_gopigo3' with type 'ros.ament_cmake' and name 'nav2_gopigo3'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'ros'
+[0.334s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_gopigo3_msg' with type 'ros.ament_cmake' and name 'ros2_gopigo3_msg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'ros'
+[0.335s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_gopigo3_node' with type 'ros.ament_python' and name 'ros2_gopigo3_node'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'ros'
+[0.336s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_libcamera_pub' with type 'ros.ament_python' and name 'ros2_libcamera_pub'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scan_client' with type 'ros.ament_python' and name 'scan_client'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['colcon_pkg']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'colcon_pkg'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['colcon_meta']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'colcon_meta'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleop_gopigo3_keyboard' with type 'ros.ament_python' and name 'teleop_gopigo3_keyboard'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ros'
+[0.339s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.359s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'explorer_wanderer' in 'src/explorer_wanderer'
+[0.359s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gopi5go_dave' in 'src/gopi5go_dave'
+[0.359s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'nav2_gopigo3' in 'src/nav2_gopigo3'
+[0.359s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2_gopigo3_msg' in 'src/ros2_gopigo3_msg'
+[0.359s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2_libcamera_pub' in 'src/ros2_libcamera_pub'
+[0.359s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'scan_client' in 'src/scan_client'
+[0.359s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'teleop_gopigo3_keyboard' in 'src/teleop_gopigo3_keyboard'
+[0.359s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ydlidar_ros2_driver' in 'src/ydlidar_ros2_driver'
+[0.359s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2_gopigo3_node' in 'src/ros2_gopigo3_node'
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.369s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 413 installed packages in /opt/ros/humble
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.423s] DEBUG:colcon.colcon_core.verb:Building package 'dave_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces', 'merge_install': False, 'path': '/home/ubuntu/gopi5go_desk/ros2ws/src/dave_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.423s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.425s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.425s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/gopi5go_desk/ros2ws/src/dave_interfaces' with build type 'ament_cmake'
+[0.425s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/gopi5go_desk/ros2ws/src/dave_interfaces'
+[0.427s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.428s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.428s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.437s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/gopi5go_desk/ros2ws/src/dave_interfaces -DCMAKE_INSTALL_PREFIX=/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces
+[2.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/gopi5go_desk/ros2ws/src/dave_interfaces -DCMAKE_INSTALL_PREFIX=/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces
+[2.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces -- -j4 -l4
+[9.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces -- -j4 -l4
+[9.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces
+[9.833s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dave_interfaces)
+[9.834s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/gopi5go_desk/ros2ws/build/dave_interfaces
+[9.836s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces' for CMake module files
+[9.837s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces' for CMake config files
+[9.837s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_interfaces', 'cmake_prefix_path')
+[9.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.ps1'
+[9.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.dsv'
+[9.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.sh'
+[9.840s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/lib'
+[9.840s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_interfaces', 'ld_library_path_lib')
+[9.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.ps1'
+[9.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.dsv'
+[9.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.sh'
+[9.841s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/bin'
+[9.841s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/lib/pkgconfig/dave_interfaces.pc'
+[9.841s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/lib/python3.10/site-packages'
+[9.841s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/bin'
+[9.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/package.ps1'
+[9.842s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/package.dsv'
+[9.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/package.sh'
+[9.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/package.bash'
+[9.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/package.zsh'
+[9.845s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/colcon-core/packages/dave_interfaces)
+[10.118s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dave_interfaces)
+[10.118s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces' for CMake module files
+[10.119s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces' for CMake config files
+[10.119s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_interfaces', 'cmake_prefix_path')
+[10.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.ps1'
+[10.120s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.dsv'
+[10.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.sh'
+[10.121s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/lib'
+[10.121s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_interfaces', 'ld_library_path_lib')
+[10.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.ps1'
+[10.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.dsv'
+[10.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.sh'
+[10.122s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/bin'
+[10.122s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/lib/pkgconfig/dave_interfaces.pc'
+[10.123s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/lib/python3.10/site-packages'
+[10.123s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/bin'
+[10.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/package.ps1'
+[10.124s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/package.dsv'
+[10.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/package.sh'
+[10.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/package.bash'
+[10.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/dave_interfaces/package.zsh'
+[10.126s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/gopi5go_desk/ros2ws/install/dave_interfaces/share/colcon-core/packages/dave_interfaces)
+[10.126s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.127s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.127s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.127s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.132s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.132s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.132s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.143s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.144s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/gopi5go_desk/ros2ws/install/local_setup.ps1'
+[10.145s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/gopi5go_desk/ros2ws/install/_local_setup_util_ps1.py'
+[10.146s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/gopi5go_desk/ros2ws/install/setup.ps1'
+[10.147s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/gopi5go_desk/ros2ws/install/local_setup.sh'
+[10.147s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/gopi5go_desk/ros2ws/install/_local_setup_util_sh.py'
+[10.148s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/gopi5go_desk/ros2ws/install/setup.sh'
+[10.149s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/gopi5go_desk/ros2ws/install/local_setup.bash'
+[10.149s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/gopi5go_desk/ros2ws/install/setup.bash'
+[10.150s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/gopi5go_desk/ros2ws/install/local_setup.zsh'
+[10.151s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/gopi5go_desk/ros2ws/install/setup.zsh'

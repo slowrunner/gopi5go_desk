@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/gopi5go_desk/simws/build/gpg3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/gopi5go_desk/simws/build/gpg3_msgs -- -j4 -l4
+Invoked command in '/home/ubuntu/gopi5go_desk/simws/build/gpg3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/gopi5go_desk/simws/build/gpg3_msgs -- -j4 -l4
+Invoking command in '/home/ubuntu/gopi5go_desk/simws/build/gpg3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/gopi5go_desk/simws/build/gpg3_msgs
+Invoked command in '/home/ubuntu/gopi5go_desk/simws/build/gpg3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/gopi5go_desk/simws/build/gpg3_msgs

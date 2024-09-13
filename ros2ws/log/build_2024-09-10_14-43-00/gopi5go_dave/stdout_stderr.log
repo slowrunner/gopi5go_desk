@@ -1,0 +1,29 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating gopi5go_dave.egg-info
+writing gopi5go_dave.egg-info/PKG-INFO
+writing dependency_links to gopi5go_dave.egg-info/dependency_links.txt
+writing entry points to gopi5go_dave.egg-info/entry_points.txt
+writing requirements to gopi5go_dave.egg-info/requires.txt
+writing top-level names to gopi5go_dave.egg-info/top_level.txt
+writing manifest file 'gopi5go_dave.egg-info/SOURCES.txt'
+reading manifest file 'gopi5go_dave.egg-info/SOURCES.txt'
+writing manifest file 'gopi5go_dave.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/lib/python3.10/site-packages/gopi5go-dave.egg-link (link to .)
+Installing battery_node script to /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/lib/gopi5go_dave
+Installing dave_node script to /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/lib/gopi5go_dave
+Installing docking_node script to /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/lib/gopi5go_dave
+Installing say_client script to /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/lib/gopi5go_dave
+Installing say_node script to /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/lib/gopi5go_dave
+Installing test_dock script to /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/lib/gopi5go_dave
+
+Installed /home/ubuntu/gopi5go_desk/ros2ws/build/gopi5go_dave
+running symlink_data
+creating /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/share/ament_index
+creating /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/share/ament_index/resource_index
+creating /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/gopi5go_desk/ros2ws/build/gopi5go_dave/resource/gopi5go_dave -> /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/gopi5go_desk/ros2ws/build/gopi5go_dave/package.xml -> /home/ubuntu/gopi5go_desk/ros2ws/install/gopi5go_dave/share/gopi5go_dave

@@ -1,0 +1,28 @@
+[0.650s] Invoking command in '/home/ubuntu/gopi5go_desk/ros2ws/build/explorer_wanderer': PYTHONPATH=/home/ubuntu/gopi5go_desk/ros2ws/build/explorer_wanderer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/gopi5go_desk/ros2ws/build/explorer_wanderer/build --no-deps symlink_data
+[0.941s] running develop
+[0.941s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.941s]   warnings.warn(
+[1.122s] running egg_info
+[1.122s] creating explorer_wanderer.egg-info
+[1.122s] writing explorer_wanderer.egg-info/PKG-INFO
+[1.122s] writing dependency_links to explorer_wanderer.egg-info/dependency_links.txt
+[1.123s] writing entry points to explorer_wanderer.egg-info/entry_points.txt
+[1.123s] writing requirements to explorer_wanderer.egg-info/requires.txt
+[1.123s] writing top-level names to explorer_wanderer.egg-info/top_level.txt
+[1.123s] writing manifest file 'explorer_wanderer.egg-info/SOURCES.txt'
+[1.124s] reading manifest file 'explorer_wanderer.egg-info/SOURCES.txt'
+[1.125s] writing manifest file 'explorer_wanderer.egg-info/SOURCES.txt'
+[1.126s] running build_ext
+[1.126s] Creating /home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/lib/python3.10/site-packages/explorer-wanderer.egg-link (link to .)
+[1.127s] Installing discoverer_server script to /home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/lib/explorer_wanderer
+[1.127s] Installing wanderer script to /home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/lib/explorer_wanderer
+[1.127s] Installing wanderer_server script to /home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/lib/explorer_wanderer
+[1.128s] 
+[1.128s] Installed /home/ubuntu/gopi5go_desk/ros2ws/build/explorer_wanderer
+[1.128s] running symlink_data
+[1.128s] creating /home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/share/ament_index
+[1.128s] creating /home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/share/ament_index/resource_index
+[1.128s] creating /home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/share/ament_index/resource_index/packages
+[1.128s] symbolically linking /home/ubuntu/gopi5go_desk/ros2ws/build/explorer_wanderer/resource/explorer_wanderer -> /home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/share/ament_index/resource_index/packages
+[1.128s] symbolically linking /home/ubuntu/gopi5go_desk/ros2ws/build/explorer_wanderer/package.xml -> /home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/share/explorer_wanderer
+[1.156s] Invoked command in '/home/ubuntu/gopi5go_desk/ros2ws/build/explorer_wanderer' returned '0': PYTHONPATH=/home/ubuntu/gopi5go_desk/ros2ws/build/explorer_wanderer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/gopi5go_desk/ros2ws/install/explorer_wanderer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/gopi5go_desk/ros2ws/build/explorer_wanderer/build --no-deps symlink_data

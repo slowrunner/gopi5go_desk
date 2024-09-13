@@ -1,0 +1,36 @@
+[0.018s] Invoking command in '/home/ubuntu/gopi5go_desk/simws/build/gpg3_fake_node': CMAKE_PREFIX_PATH=/home/ubuntu/gopi5go_desk/simws/install/gpg3_msgs:/home/ubuntu/gopi5go_desk/simws/install/gpg3_simulations:/home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node:/home/ubuntu/gopi5go_desk/simws/install/gpg3_gazebo:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/gopi5go_desk/simws/build/gpg3_fake_node -- -j4 -l4
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target gpg3_fake_node[0m
+[0.091s] [100%] Built target gpg3_fake_node
+[0.103s] Invoked command in '/home/ubuntu/gopi5go_desk/simws/build/gpg3_fake_node' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/gopi5go_desk/simws/install/gpg3_msgs:/home/ubuntu/gopi5go_desk/simws/install/gpg3_simulations:/home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node:/home/ubuntu/gopi5go_desk/simws/install/gpg3_gazebo:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/gopi5go_desk/simws/build/gpg3_fake_node -- -j4 -l4
+[0.163s] Invoking command in '/home/ubuntu/gopi5go_desk/simws/build/gpg3_fake_node': CMAKE_PREFIX_PATH=/home/ubuntu/gopi5go_desk/simws/install/gpg3_msgs:/home/ubuntu/gopi5go_desk/simws/install/gpg3_simulations:/home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node:/home/ubuntu/gopi5go_desk/simws/install/gpg3_gazebo:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/gopi5go_desk/simws/build/gpg3_fake_node
+[0.171s] -- Install configuration: ""
+[0.171s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/lib/gpg3_fake_node/gpg3_fake_node
+[0.171s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/launch
+[0.171s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/launch/gpg3_fake_node.launch.py
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/launch/rviz2.launch.py
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/param
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/param/waffle_pi.yaml
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/param/gopigo3.yaml
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/param/burger.yaml
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/param/waffle.yaml
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/include/
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/include//gpg3_fake_node
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/include//gpg3_fake_node/gpg3_fake_node.hpp
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/ament_index/resource_index/package_run_dependencies/gpg3_fake_node
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/ament_index/resource_index/parent_prefix_path/gpg3_fake_node
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/environment/ament_prefix_path.sh
+[0.172s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/environment/ament_prefix_path.dsv
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/environment/path.sh
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/environment/path.dsv
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/local_setup.bash
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/local_setup.sh
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/local_setup.zsh
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/local_setup.dsv
+[0.173s] -- Installing: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/package.dsv
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/ament_index/resource_index/packages/gpg3_fake_node
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/cmake/gpg3_fake_nodeConfig.cmake
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/cmake/gpg3_fake_nodeConfig-version.cmake
+[0.173s] -- Up-to-date: /home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node/share/gpg3_fake_node/package.xml
+[0.175s] Invoked command in '/home/ubuntu/gopi5go_desk/simws/build/gpg3_fake_node' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/gopi5go_desk/simws/install/gpg3_msgs:/home/ubuntu/gopi5go_desk/simws/install/gpg3_simulations:/home/ubuntu/gopi5go_desk/simws/install/gpg3_fake_node:/home/ubuntu/gopi5go_desk/simws/install/gpg3_gazebo:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/gopi5go_desk/simws/build/gpg3_fake_node
