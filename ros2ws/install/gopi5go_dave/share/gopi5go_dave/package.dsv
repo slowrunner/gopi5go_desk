@@ -1,9 +1,0 @@
-source;share/gopi5go_dave/hook/pythonpath.ps1
-source;share/gopi5go_dave/hook/pythonpath.dsv
-source;share/gopi5go_dave/hook/pythonpath.sh
-source;share/gopi5go_dave/hook/ament_prefix_path.ps1
-source;share/gopi5go_dave/hook/ament_prefix_path.dsv
-source;share/gopi5go_dave/hook/ament_prefix_path.sh
-source;../../build/gopi5go_dave/share/gopi5go_dave/hook/pythonpath_develop.ps1
-source;../../build/gopi5go_dave/share/gopi5go_dave/hook/pythonpath_develop.dsv
-source;../../build/gopi5go_dave/share/gopi5go_dave/hook/pythonpath_develop.sh
