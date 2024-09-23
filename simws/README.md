@@ -1,4 +1,13 @@
-# gpg3  
+# GoPiGo3 SIMULATION WORKSPACE
+
+This workspace uses Gazebo Classic version 11
+with files modified from turtlbot3_*
+
+### Install ROS 2 Gazebo Classic
+sudo apt install ros-humble-gazebo-ros-pkgs
+
+### Install Turtlebot3 packages
+sudo apt install ros-humble-turtlebot3*
 
 
 To build:  
@@ -6,19 +15,23 @@ To build:
 ./rebuild.sh
 ```
 
-Remeber to source the built packages:  
+Remeber to source the built packages  
+(and exports ROS_DOMAIN_ID=1 so robot GoPi5Go-Dave does not listen)
 ```
 source ss.sh  
 ```
 
 GPG3_MODEL: gopigo3  
 
-WORLDS: gpg3_world.world  gpg3_house.world  empty_world.world
+WORLDS: gpg3_world.world  gpg3_house.world  empty_world.world  gpg3_square.world
+(gpg3_square.world is turtlebot3_dqn_stage2.world)
 
 MAPS:  gpg3world.yaml  floorplan.map.yaml (not gpg3_house floorplan)
 
 ### Launch gpg3_gazebo  
 ros2 launch gpg3_gazebo gpg3_world.launch.py  
+or
+ros2 launch gpg3_gazebo gpg3_square.launch.py  
 
 ### Launch cartographer to make map  
 ros2 launch gpg3_cartographer cartographer.launch.py  
