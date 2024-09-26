@@ -1,0 +1,289 @@
+<?xml version="1.0" ?>
+<sdf version="1.0">
+  <model name="gpg3_gopi5go_dave">  
+    <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+<!--    <material name="blue">
+      <color rgba="0 0.5 1 0.5"/>
+    </material>
+
+    <material name="yellow">
+       <color rgba="1 1 0 0.5"/>
+    </material>
+-->
+
+    <!-- Allow either base_link or base_footprint -->
+    <link name="base_footprint"/>
+    <link name="base_link">
+
+      <!-- Mass 2.5lbs 1.13kg and m*(dim/2)^2 in kg/m2 -->
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <inertia>
+          <ixx>0.018</ixx>
+          <ixy>0.000</ixy>
+          <ixz>0.000</ixz>
+          <iyy>0.004</iyy>
+          <iyz>0.000</iyz>
+          <izz>0.041</izz>
+        </inertia>
+        <mass>1.13</mass>
+      </inertial>
+
+      <collision name="base_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.23 0.14 0.37</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="base_visual">
+        <pose>-0.017 0 0.047 0 0 0</pose>
+        <geometry>
+            <box size="0.216 0.103 0.004"/>
+        </geometry>
+        <!-- <material name="blue"/> -->
+      </visual>
+
+    </link>
+
+    <link name="base_scan">    
+      <inertial>
+        <pose>-0.014 0 0.200 0 0 0</pose>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0.000</ixy>
+          <ixz>0.000</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0.000</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <mass>0.125</mass>
+      </inertial>
+
+      <collision name="lidar_sensor_collision">
+        <pose>-0.014 0 0.200 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0325</radius>
+            <length>0.020</length>
+          </cylinder>
+        </geometry>
+      </collision>
+
+      <visual name="lidar_sensor_visual">
+        <pose>-0.14 0 0.20 0 0 0</pose>
+        <geometry>
+            <cylinder length="0.020" radius="0.0325" />
+        </geometry>
+        <!-- <material name="yellow" /> -->
+      </visual>
+
+      <sensor name="ydlidar_x4" type="ray">
+        <always_on>1</always_on>
+        <visualize>0</visualize>
+        <pose>-0.014 0 0.200 0 0 0</pose>
+        <!-- 5 Hz rotation -->
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>720</samples>
+              <resolution>0.5</resolution>
+              <min_angle>-3.14159</min_angle>
+              <max_angle>3.14159</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.120000</min>
+            <max>10.0</max>
+            <!--2cm out to 0.5m, 1.5% out to 6m = 9cm-->
+            <resolution>0.02000</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.015</stddev>
+          </noise>
+        </ray>
+
+        <plugin name="gpg3_laserscan" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <!-- <namespace>/gpg3</namespace> -->
+            <remapping>~/out:=scan</remapping>
+          </ros>
+          <output_type>sensor_msgs/LaserScan</output_type>
+          <frame_name>base_scan</frame_name>
+        </plugin>
+     </sensor>
+
+    </link>
+
+    <link name="base_image">    
+      <inertial>
+        <pose>0.08 0 0.162 0 0 0</pose>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0.000</ixy>
+          <ixz>0.000</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0.000</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <mass>0.125</mass>
+      </inertial>
+
+      <collision name="image_sensor_collision">
+        <pose>0.08 0 0.162 0 0 0</pose>
+        <geometry>
+          <box size="0.022 0.097 0.030" />
+        </geometry>
+      </collision>
+
+      <visual name="image_sensor_visual">
+        <pose>0.08 0 0.162 0 0 0</pose>
+        <geometry>
+          <box size="0.022 0.097 0.030" />
+        </geometry>
+        <!-- <material name="yellow" /> -->
+      </visual>
+
+      <sensor name="oak_d_w_rgb" type="camera">
+        <always_on>1</always_on>
+        <visualize>0</visualize>
+        <update_rate>30</update_rate>
+        <pose>0.08 0 0.162 0 0 0</pose>
+        <camera>
+          <horizontal_fov>2.23402</horizontal_fov>
+          <image>
+            <width>1280</width>
+            <height>800</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.018</near>
+            <far>300</far>
+          </clip>
+        </camera>
+      </sensor>
+    </link>
+
+    <link name="left_wheel">
+
+      <inertial>
+        <pose>0.0 0.058 0.033385 -1.57 0 0</pose>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0.000</ixy>
+          <ixz>0.000</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0.000</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <mass>0.1</mass>
+      </inertial>
+
+      <collision name="left_wheel_collision">
+        <pose>0.0 0.058 0.033385 -1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.03385</radius>
+            <length>0.025</length>
+          </cylinder>
+        </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100000.0</mu>
+                <mu2>100000.0</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0.0</slip1>
+                <slip2>0.0</slip2>
+              </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="left_wheel_visual">
+        <pose>0.0 0.058 0.033385 -1.57 0 0</pose>
+        <geometry>
+          <cylinder length="0.025" radius="0.03385" />
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="right_wheel">
+
+      <inertial>
+        <pose>0.0 -0.058 0.033385 -1.57 0 0</pose>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0.000</ixy>
+          <ixz>0.000</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0.000</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <mass>0.1</mass>
+      </inertial>
+    
+      <collision name="right_wheel_collision">
+        <pose>0.0 -0.058 0.033385 -1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.03385</radius>
+            <length>0.025</length>
+          </cylinder>
+        </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100000.0</mu>
+                <mu2>100000.0</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0.0</slip1>
+                <slip2>0.0</slip2>
+              </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="right_wheel_visual">
+        <pose>0.0 -0.058 0.033385 -1.57 0 0</pose>
+        <geometry>
+          <cylinder length="0.025" radius="0.03385" />
+        </geometry>
+      </visual>
+    </link>
+
+    <joint name="left_wheel_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>left_wheel</child>
+      <pose>0.0 0.058 0.033385 -1.57 0 0</pose>
+     <axis>
+        <xyz>0 1 0</xyz>
+      </axis>
+    </joint>
+
+    <joint name="right_wheel_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>right_wheel</child>
+      <pose>0.0 -0.058 0.033385 -1.57 0 0</pose>
+      <axis>
+        <xyz>0 1 0</xyz>
+      </axis>
+    </joint>
+
+    <joint name="oak_d_w_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>oak_d_w_frame</child>
+      <pose>0.08 0 0.162 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+
+  </model>
+</sdf>
