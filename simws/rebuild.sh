@@ -9,13 +9,13 @@ rosdep install -i --from-path src
 
 
 echo "*** colcon build --packages-select gpg3_msg "
-colcon build --packages-select gpg3_msgs
+colcon build --packages-select gpg3_msgs --allow-overriding gpg3_msgs
 
 echo "*** colcon build --packages-select gpg3_gazebo "
-colcon build --packages-select gpg3_gazebo
+colcon build --packages-select gpg3_gazebo --allow-overriding gpg3_gazebo
 
 echo "*** colcon build --packages-select gpg3_fake_node "
-colcon build --packages-select gpg3_fake_node
+colcon build --packages-select gpg3_fake_node  --allow-overriding gpg3_fake_node
 
 echo "*** colcon build --packages-select gpg3_simulations "
 colcon build --packages-select gpg3_simulations
