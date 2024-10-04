@@ -88,15 +88,6 @@
       <material name="blue"/>
     </visual>
 
-    <!-- Caster -->
-    <visual name="caster">
-      <origin xyz="-0.114 0 0.01" rpy="0 0 0" />
-      <geometry>
-        <sphere radius="0.01" />
-      </geometry>
-      <material name="blue"/>
-    </visual>
-
     <!-- Caster Plate -->
     <visual name="castor_plate">
         <origin xyz="-0.114 0.0 0.022" rpy="0 0 0" />
@@ -167,6 +158,27 @@
 
   </link>
   <!-- END of base_link -->
+
+
+  <!-- Castor -->
+  <link name="rear_castor_link">
+    <!-- Caster -->
+    <visual name="caster">
+      <origin xyz="-0.114 0 0.01" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.01" />
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <joint name="rear_castor_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="rear_castor_link"/>
+    <origin xyz="-0.114 0 0.01" rpy="0 0 0" /> 
+  </joint>
+
+
 
   <!-- Right Wheel -->
   <link name="wheel_right_link">
