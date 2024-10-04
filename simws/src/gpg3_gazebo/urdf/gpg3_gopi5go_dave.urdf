@@ -5,13 +5,17 @@
 <!-- maintainer: slowrunner@users.noreply.github.com -->
 
 <!-- GoPiGo3 as 216mm long,  103mm wide, 4mm thick plates (blue) -->
-<!--   with a 3/4 inch castor holding the chassis level (blue) -->
+<!--   with a 3/4 inch caster holding the chassis level (blue) -->
 <!--   with (effective) 66.77mm dia 25mm wide wheels (black) and 106.14mm wheel base -->
 <!--   NOTE: The center of rotation must be at xyz="0 0 X" of the base link -->
 <!--         therefore the wheel joints' x value must be 0 -->
 <!--   The chassis center is 17mm back of the center of rotation (wheels) -->
 <!--   The LIDAR is ~22mm behind the center of rotation (wheels) -->
 <!--       (A bit hard to measure after assembled.) -->
+
+<!-- NOTE: Caster joint is type "fixed" for simplification -->
+<!--       Caster joint of type "ball" requires three links with inertia -->
+<!--       and three joints (one for each axis) -->
 
 <robot name="gopi5go_dave">
 
@@ -88,8 +92,8 @@
       <material name="blue"/>
     </visual>
 
-    <!-- Caster Plate -->
-    <visual name="castor_plate">
+    <!-- caster Plate -->
+    <visual name="caster_plate">
         <origin xyz="-0.114 0.0 0.022" rpy="0 0 0" />
         <geometry>
           <box size="0.025 0.055 0.002" />
@@ -97,8 +101,8 @@
       <material name="blue"/>
     </visual>
 
-    <!-- Caster Standoff Left -->
-    <visual name="castor_standoff_left">
+    <!-- caster Standoff Left -->
+    <visual name="caster_standoff_left">
         <origin xyz="-0.114 -0.018 0.035" rpy="0 0 0" />
         <geometry>
           <cylinder length="0.025" radius="0.004" />
@@ -107,7 +111,7 @@
     </visual>
 
     <!-- Caster Standoff Right -->
-    <visual name="castor_standoff_right">
+    <visual name="caster_standoff_right">
         <origin xyz="-0.114 0.018 0.035" rpy="0 0 0" />
         <geometry>
           <cylinder length="0.025" radius="0.004" />
@@ -160,8 +164,8 @@
   <!-- END of base_link -->
 
 
-  <!-- Castor -->
-  <link name="rear_castor_link">
+  <!-- caster -->
+  <link name="rear_caster_link">
     <!-- Caster -->
     <visual name="caster">
       <origin xyz="-0.114 0 0.01" rpy="0 0 0" />
@@ -172,9 +176,9 @@
     </visual>
   </link>
 
-  <joint name="rear_castor_joint" type="fixed">
+  <joint name="rear_caster_joint" type="fixed">
     <parent link="base_link"/>
-    <child link="rear_castor_link"/>
+    <child link="rear_caster_link"/>
     <origin xyz="-0.114 0 0.01" rpy="0 0 0" /> 
   </joint>
 

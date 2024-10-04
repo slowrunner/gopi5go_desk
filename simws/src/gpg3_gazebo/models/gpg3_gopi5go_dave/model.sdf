@@ -50,7 +50,7 @@
         </geometry>
       </visual>
 
-      <visual name="castor_standoff_left_visual">
+      <visual name="caster_standoff_left_visual">
         <pose>-0.114 -0.018 0.035 0 0 0</pose>
         <geometry>
           <cylinder>
@@ -60,7 +60,7 @@
         </geometry>
       </visual>
 
-      <visual name="castor_standoff_right_visual">
+      <visual name="caster_standoff_right_visual">
         <pose>-0.114 0.018 0.035 0 0 0</pose>
         <geometry>
           <cylinder>
@@ -462,7 +462,7 @@
       </visual>
     </link>
 
-    <link name="rear_castor_link">
+    <link name="rear_caster_link">
 
       <inertial>
         <pose>-0.114 0 0.01 0 0 0</pose>
@@ -549,9 +549,11 @@
       </axis>
     </joint>
 
-    <joint name="rear_caster_joint" type="ball">
+    <!-- NOTE: Set joint to fixed. -->
+    <!-- Type "ball" requires three links with inertia and three joints (one for each axis) -->
+    <joint name="rear_caster_joint" type="fixed">
       <parent>base_link</parent>
-      <child>rear_castor_link</child>
+      <child>rear_caster_link</child>
     </joint>
 
     <joint name="base_joint" type="fixed">
