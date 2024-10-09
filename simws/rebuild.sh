@@ -26,6 +26,9 @@ colcon build --packages-select gpg3_cartographer
 echo "*** colcon build --packages-select gpg3_navigation2 "
 colcon build --packages-select gpg3_navigation2
 
+echo "*** colcon build --packages-select testnodes "
+colcon build --packages-select testnodes
+
 
 echo -e "\n*** . install/setup.bash"
 . install/setup.bash
