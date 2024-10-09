@@ -21,7 +21,7 @@ Remeber to source the built packages
 source ss.sh  
 ```
 
-GPG3_MODEL: gopigo3  
+GPG3_MODEL: gopigo3  gopi5go_dave  waffle
 
 WORLDS: gpg3_world.world  gpg3_house.world  empty_world.world  gpg3_square.world
 (gpg3_square.world is turtlebot3_dqn_stage2.world)
@@ -32,6 +32,13 @@ MAPS:  gpg3world.yaml  floorplan.map.yaml (not gpg3_house floorplan)
 ros2 launch gpg3_gazebo gpg3_world.launch.py  
 or
 ros2 launch gpg3_gazebo gpg3_square.launch.py  
+
+### Launch a teleop_keyboard
+cmds/run_teleop_gopigo3_keyboard.sh
+or
+cmds/start_tb3_teleop_key.sh
+or
+ros2 run turtlebot3_teleop teleop_keyboard
 
 ### Launch cartographer to make map  
 ros2 launch gpg3_cartographer cartographer.launch.py  
