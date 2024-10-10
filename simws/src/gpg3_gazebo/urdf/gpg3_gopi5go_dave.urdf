@@ -13,9 +13,11 @@
 <!--   The LIDAR is ~22mm behind the center of rotation (wheels) -->
 <!--       (A bit hard to measure after assembled.) -->
 
-<!-- NOTE: Caster joint is type "fixed" for simplification -->
+<!-- NOTE: Caster is modeled as a static body_link part; (Could not keep attached) -->
+<!--       Caster joint would be type "fixed" for simplification -->
 <!--       Caster joint of type "ball" requires three links with inertia -->
 <!--       and three joints (one for each axis) -->
+<!--       Caster is the American word, Castor the British term -->
 
 <robot name="gopi5go_dave">
 
@@ -119,6 +121,15 @@
         <material name="blue"/>
     </visual>
 
+  <!-- Caster - inside base_link to keep attached to body -->
+    <visual name="caster">
+      <origin xyz="-0.114 0 0.01" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.01" />
+      </geometry>
+      <material name="blue"/>
+    </visual>
+
     
     <!-- Level 3 Plate -->
     <visual name="level_3_plate">
@@ -164,9 +175,9 @@
   <!-- END of base_link -->
 
 
-  <!-- caster -->
-  <link name="rear_caster_link">
-    <!-- Caster -->
+  <!-- moved caster inside base_link, had difficulty keeping it attached when separate-->
+  <!-- Caster -->
+  <!-- <link name="rear_caster_link">
     <visual name="caster">
       <origin xyz="-0.114 0 0.01" rpy="0 0 0" />
       <geometry>
@@ -181,7 +192,7 @@
     <child link="rear_caster_link"/>
     <origin xyz="-0.114 0 0.01" rpy="0 0 0" /> 
   </joint>
-
+  -->
 
 
   <!-- Right Wheel -->
@@ -198,8 +209,8 @@
   <joint name="wheel_right_joint" type="continuous">
     <parent link="base_link"/>
     <child link="wheel_right_link"/>
-    <origin xyz="0 -0.058 0.033385" rpy="-1.57 0 0" /> 
-    <axis xyz="0 0 1" />
+    <origin xyz="0 -0.058 0.033385" rpy="0 0 0" /> 
+    <axis xyz="0 1 0" />
   </joint>
 
   <!-- Left Wheel -->
@@ -250,8 +261,8 @@
   <joint name="wheel_left_joint" type="continuous">
     <parent link="base_link"/>
     <child link="wheel_left_link"/>
-    <origin xyz="0 0.058 0.033385" rpy="-1.57 0 0" /> 
-    <axis xyz="0 0 1" />
+    <origin xyz="0 0.058 0.033385" rpy="0 0 0" /> 
+    <axis xyz="0 1 0" />
   </joint>
 
   <!-- LIDAR -->
