@@ -264,7 +264,7 @@
 
       <sensor name="ydlidar_x4" type="ray">
         <always_on>true</always_on>
-        <visualize>true</visualize>
+        <visualize>false</visualize>
         <pose>-0.014 0 0.20 0 0 0</pose>
         <!-- 5 Hz rotation -->
         <update_rate>5</update_rate>
